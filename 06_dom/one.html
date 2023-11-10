@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Learning with selectors</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script>
+        function clickHandler(){
+            const element = document.getElementById('title')
+            // let element = document.getElementById('title').classList
+            // let element = document.getElementById('title').className
+            // let element = document.getElementById('title').getAttribute('id')
+            // let element = document.getElementById('title').textContent
+            // let element = document.getElementById('title').innerHTML
+            // let element = document.getElementById('title').innerText
+            console.log(element);
+        }
+    </script>
+</head>
+<body class="bg-black" >
+    <div >
+        <h1 id="title" (click)="clickHandler()" class="heading dummy" >
+            DOM Learning
+            <span style="display: none;" >Text Test</span>
+        </h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <h4>Lorem ipsum dolor sit amet.</h4>
+        <h1>The End.</h1>
+        <p>  Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <ul id="list" >
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!-- 
+*           Some document methods
+todo            getElementById
+?                      classList
+?                      className
+?                      getAttribute
+?                      setAttribute
+?                      textContent : Gives text which is only visible or not visible (because of any style)
+?                      innerHTML : gives html inside the element
+?                      innerText : Gives text which is only visible in dom
+todo            getElementsByClassName
+todo            querySelector : The Document method querySelector() returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.
+todo            querySelectorAll : The Document method querySelectorAll() returns a static (not live) NodeList representing a list of the document's elements that match the specified group of selectors.
+
+
+ -->
+
+ <!-- 
+*       You can convert a htmlCollection or a nodelist to a array  from Array.from() method
+  -->

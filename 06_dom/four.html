@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit/Remove Dom Elements</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+        .bg-black{
+            background-color: #212121;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black" >
+    <ul class="language">
+        <li>Javasript</li>
+    </ul>
+
+</body>
+<script>
+    const ul = document.querySelector('.language')
+    function addLanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        ul.appendChild(li)
+    }
+
+    function addOptiLanguage(params) { // Optimised
+        const li = document.createElement('li')
+        const addText = document.createTextNode(params)
+        li.appendChild(addText)
+        ul.appendChild(li)
+    }
+    addLanguage('C++')
+    addLanguage('Ruby')
+    addOptiLanguage('Golang')
+
+    // Edit
+
+    const selectedLang = document.querySelector('li:nth-child(3)')
+    selectedLang.innerHTML = 'Redbrad'  // 1st approach
+    const newLi = document.createElement('li')
+    newLi.textContent = 'Redbrad'
+    // selectedLang.replaceWith(newLi) // 2nd approach
+
+    // selectedLang.outerHTML = '<li>Redbrad</li>' // 3rd approach
+
+    // Remove
+    // selectedLang.remove()
+
+</script>
+</html>

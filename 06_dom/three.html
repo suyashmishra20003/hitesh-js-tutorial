@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Creation </title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-black" >
+
+</body>
+
+<script>
+    const div = document.createElement('div')
+    div.setAttribute('class', 'divClass')
+    div.setAttribute('title', 'Div Title')
+    const divId  = Math.floor((Math.random() * 10) + 1)
+    div.setAttribute('id', divId)
+    div.innerText = "My Name is Suyash Mishra"
+    div.style.backgroundColor = 'green'
+    div.style.color = 'whitesmoke'
+    div.style.padding = '16px'
+    div.style.margin = '16px'
+    div.style.border = '4px solid yellow'
+    div.style.borderRadius = '5px'
+    div.style.fontWeight = '600'
+
+    const parent = document.createElement('div')
+    parent.setAttribute('class' , 'parent')
+    parent.style.width = '100%'
+
+
+    parent.appendChild(div)
+    document.body.appendChild(parent)
+    
+    // To attach div in HTML
+    
+    console.log(parent);
+</script>
+</html>

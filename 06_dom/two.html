@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new Element</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body  class="bg-black" >
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const days = document.getElementsByClassName('day')
+    const parent = document.querySelector('.parent')
+    const dayOne = document.querySelector('.day')
+    const testArr = Array.from(days)
+    testArr.map(
+        (item,index)=>{
+            item.style.color = 'yellow'
+        }
+    )
+    // console.log(days);
+    // console.log(parent.children);
+    // console.log(parent.firstElementChild);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+    //? childNodes
+    console.log(' NODES : ' , parent.childNodes );
+</script>
+</html>
