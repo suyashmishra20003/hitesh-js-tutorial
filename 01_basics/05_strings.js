@@ -7,7 +7,11 @@ const repoCount = 50;
 // console.log(`My name is ${name} and my repo count is ${repoCount} `  );
 
 const gameName = new String('suyaShMishra')  // Gives a String Object
-//console.log(gameName[0]); // String object key
+// gameName.map((item)=>{console.log(item);}) //! This gives a type error beacuse game name is a string object it does not support array functions
+//? To convert string object to a array
+// const strArr = Array.from(gameName)
+// strArr.map((item)=>{console.log(item);})
+// console.log(gameName); // String object key
 
 //console.log(gameName.__proto__); //? To access Prototype
 
@@ -27,7 +31,7 @@ const newStrOne = "      suyash      ";
 
 const url = 'sm@gmail.com'
  
-// console.log(url.replace('gmail','cavisson'));
+console.log(url.replace('gmail','cavisson'));
 
-console.log(url.split('',4));
-console.log(url.split(''));
+// console.log(url.split('',4));
+// console.log(url.split(''));

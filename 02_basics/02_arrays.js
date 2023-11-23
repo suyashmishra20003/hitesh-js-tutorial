@@ -24,18 +24,19 @@ const crazy_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 // const refactored_array = crazy_array.flat(2)
 const refactored_array = crazy_array.flat(Infinity) //* automatically calculates depth
 // console.log(refactored_array);
-console.log(
-    Array.isArray('Suyash')
-);
+// console.log(
+//     Array.isArray('Suyash') //* gives Boolean value
+// );
 
 let obj = {
     name:'Suyash',
     gender:'male'
 }
-console.log(Array.from(Object.values(obj))); //*  This syntax creates an array from object keys
-
+// console.log(Array.from(Object.values(obj))); //*  This syntax creates an array from object keys
+console.log(Array.from(Object.keys(obj)));
+console.log(Array.from(Object.values(obj)));
 let score1 = 100
 let score2 = 200
 let score3 = 300
 
-console.log(Array.of(score1, score2, score3));
+// console.log(Array.of(score1, score2, score3));

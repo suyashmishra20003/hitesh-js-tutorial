@@ -27,7 +27,7 @@ Avoid using var. If you need to declare a variable that has function scope or gl
 The main differences between var, let, and const in JavaScript are:
 
 ?Keyword	   Scope	               Reassignment	  Initialization
-! var	       Functionalor global	   Allowed	      Not required
+! var	       Functional or global	   Allowed	      Not required
 ! let	       Block	               Allowed	      Not required, but recommended
 ! const	       Block	               Not allowed	  Required
 Here is a table that explains each of these differences in more detail:
@@ -39,7 +39,7 @@ Here is a table that explains each of these differences in more detail:
 var variables have function scope or global scope. This means that they can be accessed anywhere within the function in which they are declared, or anywhere in the program if they are declared outside of a function.
 let and const variables have block scope. This means that they can only be accessed within the block of code in which they are declared. A block of code is a set of statements enclosed in curly braces ({}).
 
-?Reassignment
+? Reassignment
 
 *Whether or not a variable can be reassigned refers to whether or not its value can be changed after it is initialized.
 
@@ -47,7 +47,7 @@ var variables can be reassigned anywhere within their scope.
 let variables can be reassigned within their scope, but they cannot be redeclared.
 const variables cannot be reassigned or redeclared.
 
-?Initialization
+? Initialization
 
 *Initialization refers to the process of assigning a value to a variable.
 
@@ -55,7 +55,7 @@ var variables do not need to be initialized when they are declared. If a var var
 let variables do not need to be initialized when they are declared, but it is recommended to do so. If a let variable is not initialized, it will throw a ReferenceError.
 const variables must be initialized when they are declared. If a const variable is not initialized, it will throw a SyntaxError.
 
-?Hoisting
+? Hoisting
 
 *Hoisting is a JavaScript mechanism that moves all variable declarations to the top of their scope. This means that variables can be used before they are declared.
 

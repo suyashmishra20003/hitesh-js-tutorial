@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <ol>
+        <li>
+            <strong>UNSENT : </strong>	Client has been created. open() not called yet.
+        </li>
+        <li>
+            <strong>OPENED : </strong>	open() has been called.
+        </li>
+        <li>
+            <strong>HEADERS_RECEIVED : </strong>	send() has been called, and headers and status are available.
+        </li>
+        <li>
+           <strong> LOADING	Downloading : </strong> responseText holds partial data.
+        </li>
+        <li>
+            <strong>DONE</strong>	The operation is complete.
+        </li>
+    </ol>
+   
+</body>
+<script>
+    const xhr = new XMLHttpRequest();
+    const reqUrl = 'https://random-data-api.com/api/v2/users'
+    xhr.open('GET', reqUrl)
+
+    xhr.onreadystatechange = function () {
+            // console.log(xhr.readyState);  
+            if (xhr.readyState === 4) {
+                // To convert inoming string response into JSON
+                const data = JSON.parse(this.responseText)
+                // console.log(typeof data);
+                // console.log(data);
+            } 
+    }
+    // console.log(xhr.readyState);
+    xhr.send()
+</script>
+<script src="./promise.js" ></script>
+</html>

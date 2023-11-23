@@ -20,7 +20,7 @@ const obj2 = {3:'c', 4:'d'}
 
 // const obj3 = Object.assign({}, obj1 , obj2) //* assign(target,source)  By using object class 
 const obj3 = {...obj1,...obj2} //* Using Spread Operator
-
+console.log(obj3);
 
 // console.log(Object.keys(tinderUser)); //? Array of keys
 // console.log(Object.values(tinderUser)); //? Array of values

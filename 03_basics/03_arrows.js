@@ -4,7 +4,7 @@ const  user = {
     
     welcomeMessage: function (params) {
         // console.log(this); //* Prints current Context
-        // console.log(`Hello ${name}, Welcome to website `); //* This gives an error because though it is inside the object if we want to use another key inside a key function we have to use this to get the key in current context
+        // console.log(`Hello ${name}, Welcome to website `); //! This gives an error because though it is inside the object if we want to use another key inside a key function we have to use this to get the key in current context
         console.log(`Hello ${this.name}, Welcome to website `);
     }
 }
@@ -64,7 +64,7 @@ const chai = ()=>{
 //* syntax 3
 // const addTwo = num1 => num1 
 // console.log(addTwo(9));
-//? If parameter is also sinlgle and the return statement is also of a single line we can use this syntax
+//? If parameter is also single and the return statement is also of a single line we can use this syntax
 
 //* syntax 4
 // const addTwo = (num1,num2) => (
@@ -72,7 +72,7 @@ const chai = ()=>{
     // num1 + num2
 // ) 
 // console.log(addTwo(8,8));
-//? If we use curly braces {} we have to use return keyword but if we use paranthesis () no need to write a return keyword
+//? If we use curly braces {} we have to use return keyword but if we use paranthesis (), No need to write a return keyword
 
 //* syntax 5 ( If we want to return a object using parenthesis)
 const addTwo = () => ( 

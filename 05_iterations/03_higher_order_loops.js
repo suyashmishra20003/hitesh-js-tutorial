@@ -22,7 +22,6 @@ for (const greet of greetings) {
 ?        Object is similar to Map—both let you set keys to values, retrieve those values, delete keys, and detect whether something is stored at a key. 
 ?        A Map's keys can be any value (including functions, objects, or any primitive).	
 ?        The keys of an Object must be either a String or a Symbol.
-?        The keys of an Object must be either a String or a Symbol.
 ?        The number of items in a Map is easily retrieved from its size property.	
 ?        Determining the number of items in an Object is more roundabout and less efficient. A common way to do it is through the length of the array returned from Object.keys().
 

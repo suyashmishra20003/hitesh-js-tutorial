@@ -7,7 +7,7 @@
 */
 
 Object.create  //!  creates object with constructor creates singleton
-const rank = 1800
+const rank = 'new_Rank'
 //* Creating objects by object literals
 const jsUser = {
     'full name':'Suyash',
@@ -18,7 +18,6 @@ const jsUser = {
     isLoggedIn:false,
     lastLoginDays:['Monday','Saturday']
 }
-
 // console.log(jsUser.email);
 // console.log(jsUser['email']);
 // console.log(jsUser['full name']);
@@ -45,5 +44,6 @@ jsUser.greetingTwo = function () {
     console.log(`Hello Js user age is ${this.age}`);
 }
 
-console.log(jsUser.greeting());
-console.log(jsUser.greetingTwo());
+// console.log(jsUser);
+jsUser.greeting();
+jsUser.greetingTwo();

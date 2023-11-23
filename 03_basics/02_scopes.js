@@ -13,7 +13,7 @@ if (true) {
 // console.log(c);
 
 /*
-todo    scopes in the code runnong in browser (Developer tools) is different then the scopes running in the node code environment 
+todo    scopes in the code running in browser (Developer tools) is different then the scopes running in the node code environment 
 */
 
 //? NESTED SCOPES
@@ -26,7 +26,7 @@ function one(params) {
         console.log(username);
     }
     // console.log(website); //! This will give an error and line 28 will not execute
-//? Here two() can access username because chaild can access any variable of parent but parent cannot access variables of a child
+//? Here two() can access username because child can access any variable of parent but parent cannot access variables of a child
     two()
 }
 
@@ -39,10 +39,10 @@ if(true){
         console.log(username + college);  
     }
 
-    // console.log(college); //! error due to college is unside the scope of child ehich the parent cannnot access
+    // console.log(college); //! error due to college is inside the scope of child which the parent cannnot access
 }
 
-// console.log(username); //! error due to username is unside the scope of child ehich the parent cannnot access
+// console.log(username); //! error due to username is inside the scope of child which the parent cannnot access
 
 
 //* ********************* BASIC OF HOISTING *********************

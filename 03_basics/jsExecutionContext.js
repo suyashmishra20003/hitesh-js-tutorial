@@ -40,7 +40,7 @@ console.log(square2)
 ?   1) Creates a global object that is window in the browser and global in NodeJs.
 ?   2) Sets up a memory for storing variables and functions.
 ?   3) Stores the variables with values as undefined and function references.
-?   EC for abpve code
+?   EC for above code
 
 *       Creation Phase in Execution Context
 
