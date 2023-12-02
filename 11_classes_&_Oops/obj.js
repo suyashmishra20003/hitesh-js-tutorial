@@ -6,14 +6,14 @@ const user = {
     loginCount:8,
     signedIn: true,
 
-    // getUserDetails: function (){
-    //     console.log(`My Name is ${this.username} `);
-    //     console.log(this);
-    // }
-    getUserDetails:  () => {
-        // ! This gives undefiend (using arrow function geives undefined but using simple function does not give undefined)
+    getUserDetails: function (){
         console.log(`My Name is ${this.username} `);
+        console.log(this);
     }
+    // getUserDetails:  () => {
+        // ! This gives undefiend (using arrow function geives undefined but using simple function does not give undefined)
+        // console.log(`My Name is ${this.username} `);
+    // }
 }
 
 //* To make deep copy of an Object
