@@ -26,7 +26,9 @@ todo        JavaScript provides an event handler in the form of the addEventList
 todo        target: the HTML element you wish to add your event handler to. 
 todo        event: a string that specifies the name of the event. We already mentioned load and click events.
 todo        function: specifies the function to run when the event is detected. This is the magic that can allow your web pages to change dynamically.
-todo        useCapture: an optional Boolean value (true or false) that specifies whether the event should be executed in the capturing or bubbling phase. In the case of nested HTML elements (such as an img within a div) with attached event handlers, this value determines which event gets executed first. By default, it's set to false which means that the innermost HTML event handler is executed first (bubbling phase).  
+todo        useCapture: an optional Boolean value (true or false) that specifies whether the event should be executed in the capturing or bubbling phase. 
+todo        In the case of nested HTML elements (such as an img within a div) with attached event handlers, this value determines which event gets executed first. 
+todo        By default, it's set to false which means that the innermost HTML event handler is executed first (bubbling phase).  
 
 *           Bubbling
 todo        The bubbling principle is simple.

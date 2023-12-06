@@ -139,4 +139,17 @@ const filteredMyCoding = myCoding.filter(
     }, 'Added String ===> '
 )
 
-console.log(filteredMyCoding);
+// console.log(filteredMyCoding);
+
+const randomNums = [22,34,6,7,9,3,2,5,7,11,78];
+
+const result = randomNums.map((item)=>{
+    return item + 3
+}).filter((item)=>{
+    return  item % 5 == 0
+}).reduce((acc,crr)=>{
+    acc = acc + crr
+    return acc
+})
+
+console.log(result);

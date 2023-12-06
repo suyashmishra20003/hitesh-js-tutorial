@@ -16,7 +16,7 @@ class User  {
 
     get password(){
         //*  Name of the method should be equal the name of the property or it will give error 
-        //*  If you defined a getter you have to define a setter or tit will give a error
+        //*  If you defined a getter you have to define a setter or it will give a error
         //*  Runs when user is trying to get the value
         return this._password.toUpperCase()
     }

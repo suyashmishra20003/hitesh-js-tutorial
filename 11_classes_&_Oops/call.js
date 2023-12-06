@@ -5,7 +5,7 @@ function SetUserName(username) {
 }
 
 function createUser(username,email,password) {
-    // SetUserName(username) //! This  gets called but it does not gives the property username beacuse all its properties and variables are erased as it goes to global context (window object)
+    // SetUserName(username) //! This gets called but it does not gives the property username beacuse all its properties and variables are erased as it goes to global context (window object)
     //? To Overcome this problem
     SetUserName.call(this, username)
     //* Call passes the execution context of our function to other function

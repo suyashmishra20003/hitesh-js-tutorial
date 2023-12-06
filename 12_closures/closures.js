@@ -58,7 +58,7 @@ todo        For this reason, when myFunc is invoked, the variable name remains a
 //         console.log(age);
 //     }
 //     return displayName;  //* Here the entire inner function is returned
-// //*     Here not only the innner fun=ction but also its scope( Lexical Scope ) of parent is also returned
+// //*     Here not only the innner function but also its scope( Lexical Scope ) of parent is also returned
 // }
 
 const myFunc = makeFunc();

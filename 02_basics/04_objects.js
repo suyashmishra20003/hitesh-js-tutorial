@@ -20,7 +20,7 @@ const obj2 = {3:'c', 4:'d'}
 
 // const obj3 = Object.assign({}, obj1 , obj2) //* assign(target,source)  By using object class 
 const obj3 = {...obj1,...obj2} //* Using Spread Operator
-console.log(obj3);
+// console.log(obj3);
 
 // console.log(Object.keys(tinderUser)); //? Array of keys
 // console.log(Object.values(tinderUser)); //? Array of values
@@ -55,7 +55,7 @@ const arrInApi = [
     {...jsonApi} , {...course}
 ]
 
-console.log(arrInApi);
+// console.log(arrInApi);
 
 const obj = {
     "results":[
@@ -123,3 +123,51 @@ const obj = {
        "version":"1.4"
     }
  }
+
+
+ /* 
+*      The spread operator (...) in JavaScript performs a shallow copy, not a deep copy. 
+*      This means that while the top-level properties of an object are copied, 
+*      any nested objects or arrays within the object will still reference the same objects as the original.
+
+      For example, consider the following code:
+*/
+const originalObject = {
+   prop1: 'value1',
+   prop2: {
+     nestedProp1: 'nestedValue1',
+     nestedProp2: 'nestedValue2'
+   }
+ };
+ 
+ // Shallow copy using spread operator
+ const shallowCopy = { ...originalObject };
+ 
+ // Modify the nested property in the shallow copy
+ shallowCopy.prop2.nestedProp1 = 'modifiedValue';
+ 
+ console.log(originalObject.prop2.nestedProp1); // Output: 'modifiedValue'
+
+/*
+*         If you need to create a deep copy of an object with nested structures,
+*         you can use alternative methods such as JSON.parse(JSON.stringify(originalObject)) or 
+*         specialized libraries like Lodash, which provides a _.cloneDeep function. 
+*         Here's an example using the JSON method:
+
+*/
+
+const originalObject2 = {
+   prop1: 'value1',
+   prop2: {
+     nestedProp1: 'nestedValue1',
+     nestedProp2: 'nestedValue2'
+   }
+ };
+ 
+ // Deep copy using JSON method
+ const deepCopy = JSON.parse(JSON.stringify(originalObject2));
+ 
+ // Modify the nested property in the deep copy
+ deepCopy.prop2.nestedProp1 = 'modifiedValue';
+ 
+ console.log(originalObject2.prop2.nestedProp1); // Output: 'nestedValue1'
