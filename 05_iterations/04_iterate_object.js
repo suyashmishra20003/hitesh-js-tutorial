@@ -11,6 +11,9 @@ for (const key in myObject) {
     console.log(`Key is ${key} and it's value is ${myObject[key]}`);
 }
 
+const arr2 = Array.from(Object.keys(myObject))
+console.log(arr2);
+
 const arr = [1,2,3,34,,5,6,7,4]
 
 for (const key in arr) {

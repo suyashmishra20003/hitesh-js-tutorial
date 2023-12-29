@@ -1,6 +1,29 @@
 /*
+
+*       Javascript is dynamically typed, single threaded asynchronous language  
+
+*        Dynamically Typed:
+?        Variables in JavaScript can hold values of any type, and their types can change during the execution of the program.
+todo        let x = 5;       // x is a number
+todo        x = 'Hello';     // x is now a string
+
+*        Single-Threaded:
+?        JavaScript is typically single-threaded. This means it has one call stack and one memory heap. 
+?        This is because JavaScript was designed to be lightweight and to run in a browser environment 
+?        where you want to avoid blocking operations.
+
+*        Asynchronous:
+?        JavaScript uses an event loop to handle asynchronous operations. 
+?        This allows non-blocking execution and is crucial for dealing with tasks like handling user interactions, 
+?        making network requests, and handling timers.
+
+*        Concurrency Model:
+?        While JavaScript is single-threaded, the browser environment provides additional concurrency 
+?        through mechanisms like Web Workers. Web Workers enable parallel processing by running code in the background,
+?        allowing tasks to be performed concurrently.
+
 *                JS EXECUTION CONTEXT (EC)
-?     Types of EC : -
+?         Types of EC : -
 todo      1) Global Execution Context (GEC)
 todo      2) Functional Execution Context (FEC)
 todo      3) Eval Execution Context (EEC)
@@ -9,12 +32,14 @@ todo        At first GEC Runs. It runs in two phases
 todo               a) Memory Creation Phase
 todo               b) Execution Phase
 
-*        The global execution context is created when a JavaScript script first starts to run, and it represents the global scope in JavaScript. 
-*        A function execution context is created whenever a function is called, representing the function's local scope.
-*        There are two phases of JavaScript execution context:
+*    The global execution context is created when a JavaScript script first starts to run, and it represents the global scope in JavaScript. 
+*    A function execution context is created whenever a function is called, representing the function's local scope.
+*    here are two phases of JavaScript execution context:
 
- ?       Creation phase: In this phase, the JavaScript engine creates the execution context and sets up the script's environment. It determines the values of variables and functions and sets up the scope chain for the execution context.
- ?       Execution phase: In this phase, the JavaScript engine executes the code in the execution context. It processes any statements or expressions in the script and evaluates any function calls. 
+ ?   Creation phase: In this phase, the JavaScript engine creates the execution context and sets up the script's environment. 
+ ?   It determines the values of variables and functions and sets up the scope chain for the execution context.
+ ?   Execution phase: In this phase, the JavaScript engine executes the code in the execution context. 
+ ?   It processes any statements or expressions in the script and evaluates any function calls. 
 
 */
 

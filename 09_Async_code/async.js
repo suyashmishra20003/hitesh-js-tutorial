@@ -25,7 +25,7 @@ document.getElementById('start').addEventListener('click',()=>{
     interval  =  setInterval(()=>{
         document.body.style.backgroundColor = generateRandomHexCode()
         // document.querySelector('h1').innerHTML = 'Shikar Mishra ' + count
-    },300)
+    },1000)
 })
 
 document.getElementById('stop').addEventListener('click', ()=>{

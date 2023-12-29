@@ -39,10 +39,10 @@ console.log(user.welcomeMessage());
 //! -----------------------------------------------------------
 //* Using the arrow function
 
-const chai = ()=>{
-    let user = 'Arun'
-    console.log(this.user);
-}
+// const chai = ()=>{
+//     let user = 'Arun'
+//     console.log(this.user);
+// }
 // chai()
 
 //todo This also gives undefined

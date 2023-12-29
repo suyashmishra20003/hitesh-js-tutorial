@@ -146,11 +146,10 @@ todo    const copiedObject = _.cloneDeep(originalObject);
 
 console.log(copiedObject === originalObject); // false
 console.log(copiedObject.b === originalObject.b); // false
-Use code with caution. Learn more
+
 *       The best method for deep copying nested objects depends on your specific needs and preferences. 
 *       If you are working with simple objects, the JSON.parse(JSON.stringify(object)) method is a good choice. 
-*       If you need to deep copy more complex objects or frequently perform deep copies, 
-*       you may want to consider using a library or a more robust recursive function.
+*       If you need to deep copy more complex objects or frequently perform deep copies, you may want to consider using a library or a more robust recursive function.
 
 
 

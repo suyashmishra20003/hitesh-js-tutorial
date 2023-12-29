@@ -9,7 +9,7 @@ todo      But the Outer function will not have the acces of the variables of the
 //     let name = "Mozilla"; //* name is a local variable created by init
 //     function displayName() {
 //         //* displayName() is the inner function, that forms the closure
-//         cosole.log(name); //* use variable declared in the parent function
+//         console.log(name); //* use variable declared in the parent function
 //     }
 //     displayName();
 // }
