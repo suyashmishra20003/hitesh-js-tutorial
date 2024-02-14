@@ -24,20 +24,20 @@ console.log(user.userNameUpperCase());
 
 //* Behind the Scene
 
-// function User(username,email,password) {
-//     this.username = username
-//     this.email = email
-//     this.password = password
-// }
+function User(username,email,password) {
+    this.username = username
+    this.email = email
+    this.password = password
+}
 
-// User.prototype.encryptPassword = function () {
-//     return `${this.password}def`
-// }
-// User.prototype.userNameUpperCase = function () {
-//     return this.username.toUpperCase()
-// }
+User.prototype.encryptPassword = function () {
+    return `${this.password}def`
+}
+User.prototype.userNameUpperCase = function () {
+    return this.username.toUpperCase()
+}
 
-// const tea = new User('SuyAsh','sm@gmail.com','1234')
+const tea = new User('SuyAsh','sm@gmail.com','1234')
 
-// console.log(tea.encryptPassword());
-// console.log(tea.userNameUpperCase());
+console.log(tea.encryptPassword());
+console.log(tea.userNameUpperCase());

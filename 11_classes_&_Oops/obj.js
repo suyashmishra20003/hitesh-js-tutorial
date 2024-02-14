@@ -15,16 +15,7 @@ const user = {
         // console.log(`My Name is ${this.username} `);
     // }
 }
-let copy = JSON.parse(JSON.stringify(user))
-console.log('COPY => ' , copy);
 
-//* To make deep copy of an Object (This deep copies upto a certain degree for deeply nested objects it fails !!)
-//* To Deep copy use _lodash or JSON.parse(JSON.stringify(object))
-const user2 = {...user}
-
-// console.log(user.getUserDetails());
-
-console.log(user2);
 
 //*  On logging this globally gives window object which is only shown in browser
 //?       console.log(this)
@@ -46,7 +37,7 @@ function User(username, logincount, isLoggedIn) {
     // return this //? This is implicity defined
 }
 
-// const userFunc = User('Shikhar',21, true)
+const userFunc = User('Shikhar',21, true)
 //! This is a bad way to create instance of an object
 // console.log(userFunc);
 
@@ -154,4 +145,17 @@ console.log(copiedObject.b === originalObject.b); // false
 
 
 
+*/
+
+/*
+let copy = JSON.parse(JSON.stringify(user))
+// console.log('COPY => ' , copy);
+
+//* To make deep copy of an Object (This deep copies upto a certain degree for deeply nested objects it fails !!)
+//* To Deep copy use _lodash or JSON.parse(JSON.stringify(object))
+const user2 = {...user}
+
+// console.log(user.getUserDetails());
+
+// console.log(user2);
 */

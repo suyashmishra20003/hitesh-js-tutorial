@@ -29,7 +29,7 @@ Abstraction is the process of hiding the implementation details of an object and
 For example, consider a JavaScript object that represents a bank account:
 
 
-```
+```js
 const bankAccount = {
   balance: 1000,
   deposit(amount) {
@@ -50,7 +50,7 @@ Encapsulation is the process of bundling data and methods together into a single
 
 For example, consider a JavaScript object that represents a car:
 
-```
+```js
 class Car {
   constructor(make, model, year) {
     this.make = make;
@@ -79,7 +79,7 @@ Inheritance is the ability of an object to inherit properties and methods from a
 
 For example, consider a JavaScript class that represents a truck, which inherits from the Car class:
 
-```
+```js
 class Truck extends Car {
   constructor(make, model, year, bedSize) {
     super(make, model, year);
@@ -99,7 +99,7 @@ Polymorphism is the ability of an object to take on many forms. This means that 
 
 For example, consider the JavaScript method print:
 
-```
+```js
 function print(value) {
   if (typeof value === 'string') {
     console.log(value);
@@ -152,7 +152,7 @@ When you try to access a property or method on an object, JavaScript looks for i
 
 The Object.create() method can be used to create a new object with a specified prototype. It allows for more explicit prototype assignment.
 
-```
+```js
 //* PROTOTYPE EXAMPLE
 //      Constructor function
 function Mobile(name,price) {

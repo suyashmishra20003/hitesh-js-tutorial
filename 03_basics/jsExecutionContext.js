@@ -43,19 +43,18 @@ todo               b) Execution Phase
 
 */
 
-
 var n = 5;
 
 function square(n) {
-    var ans = n * n;
-    return ans;
+  var ans = n * n;
+  return ans;
 }
 
 var square1 = square(n);
 var square2 = square(8);
 
-console.log(square1)
-console.log(square2)
+console.log(square1);
+console.log(square2);
 
 /*
 ?          Creation Phase
@@ -111,19 +110,19 @@ todo    square2: 64
 
 //*      Let's see the following example:
 
-function funcA(m,n) {
-    return m * n;
+function funcA(m, n) {
+  return m * n;
 }
 
-function funcB(m,n) {
-    return funcA(m,n);
+function funcB(m, n) {
+  return funcA(m, n);
 }
 
 function getResult(num1, num2) {
-    return funcB(num1, num2)
+  return funcB(num1, num2);
 }
 
-var res = getResult(5,6);
+var res = getResult(5, 6);
 
 console.log(res); // 30
 /*

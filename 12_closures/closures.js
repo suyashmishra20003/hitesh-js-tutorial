@@ -15,23 +15,24 @@ todo      But the Outer function will not have the acces of the variables of the
 // }
 // init();
 
-// function outer() {
-//     let username = "hitesh"
-//     console.log("OUTER", secret);
-//     function inner() {
-//         let secret = "my123"
-//         console.log("inner", username);
-//     }
-//     function innerTwo() {
-//         console.log("innerTwo", username);
-//         console.log(secret); //! this gives error 
-//     }
-//     inner()
-//     innerTwo()
+const username = "Suyash"
+function outer() {
+    let username = "hitesh"
+    // console.log("OUTER", secret); //! this gives error! PArent cannot access child's variables
+    function inner() {
+        let secret = "my123"
+        console.log("inner", username);
+    }
+    function innerTwo() {
+        console.log("innerTwo", username);
+        // console.log(secret); //! this gives error 
+    }
+    inner()
+    innerTwo()
 
-// }
-// outer()
-// console.log("TOO OUTER", username);
+}
+outer()
+console.log("TOO OUTER", username);
 
 /*  
 todo        At first glance, it might seem unintuitive that this code still works. 
@@ -61,6 +62,6 @@ todo        For this reason, when myFunc is invoked, the variable name remains a
 // //*     Here not only the innner function but also its scope( Lexical Scope ) of parent is also returned
 // }
 
-const myFunc = makeFunc();
-myFunc();
+// const myFunc = makeFunc();
+// myFunc();
 
