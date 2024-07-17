@@ -57,7 +57,7 @@ console.log(square1);
 console.log(square2);
 
 /*
-?          Creation Phase
+*          Creation Phase
  
 ?   At the very beginning, the JavaScript engine executes the entire source code, creates a global execution context, and then does the following things:
 

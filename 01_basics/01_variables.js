@@ -9,7 +9,7 @@ accountEmail = "sm@fb.com";
 accountPassword = "0293";
 accountCity = "Mumbai";
 
-//todo  Prefer not o use var because of issue in block scope and functional scope
+//todo  Prefer not to use var because of issue in block scope and functional scope
 
 
 
@@ -37,7 +37,7 @@ Here is a table that explains each of these differences in more detail:
 
 *The scope of a variable refers to the part of the code where it can be accessed.
 
-var variables have function scope or global scope. 
+var variables have functional scope or global scope. 
 This means that they can be accessed anywhere within the function in which they are declared, 
 or anywhere in the program if they are declared outside of a function.
 let and const variables have block scope. 

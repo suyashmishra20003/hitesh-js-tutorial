@@ -2,9 +2,9 @@
 let score = null
 // let score = undefined
 // let score = true 
-// let score = false 
+// let score = false
 
-// console.log(typeof score);
+console.log(typeof score);
 // console.log(typeof (score));
 
 let valueInNumber = Number(score)
@@ -14,14 +14,14 @@ let valueInNumber = Number(score)
 
 //todo  "33" => 33
 //todo  "33abs" => NaN
-//todo   null  => 0
+// todo   null  => 0
 //todo   undefined => NaN
 //todo   true => 1
 //todo   false => 0
 
 let isLoggedIn = "suyash";
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-// console.log(booleanIsLoggedIn);
+console.log(booleanIsLoggedIn);
 
 //todo   1 => true 
 //todo   0 => false

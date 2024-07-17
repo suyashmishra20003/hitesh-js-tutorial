@@ -68,3 +68,22 @@ function getValue(prefix) {
 
 console.log(getValue.call(obj, "Value: ")); // Outputs: Value: 100
 console.log(getValue.apply(obj, ["Value: ","Suyash"])); // Outputs: Value: 100
+
+
+//* Use call and apply for immediate function invocation with a specific this context.
+//* Use bind to create a new function with a specific this context for later invocation.
+
+
+/*
+let obj = {
+    value:28
+}
+
+greeting.call(obj,'Suyash', '@@@@@@')
+greeting.apply(obj,['Suyash', '@@@@@@'])
+
+function greeting(name, punctuation){
+    console.log(`Hi ${name}, Your age is ${this.value} ${punctuation} `)
+}
+
+*/

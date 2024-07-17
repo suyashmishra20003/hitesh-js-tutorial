@@ -33,7 +33,7 @@ console.log('+++++++++++++++++++++++++++++++++++++++++++++++');
 const min = 0
 const max = 256
 
-//! This is a formula used to obtain random values from math.random within a rnage of 2 numbers
+//! This is a formula used to obtain random values from math.random within a range of 2 numbers
 // console.log( Math.floor(Math.random() * (max - min + 1)) + min );
 
 console.log(Math.floor((Math.random() * (max - min  + 1)) + min));

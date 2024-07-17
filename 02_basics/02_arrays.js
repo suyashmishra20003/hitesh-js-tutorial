@@ -33,8 +33,8 @@ let obj = {
     gender:'male'
 }
 // console.log(Array.from(Object.values(obj))); //*  This syntax creates an array from object keys
-console.log(Array.from(Object.keys(obj)));
-console.log(Array.from(Object.values(obj)));
+// console.log(Array.from(Object.keys(obj)));
+// console.log(Array.from(Object.values(obj)));
 let score1 = 100
 let score2 = 200
 let score3 = 300
